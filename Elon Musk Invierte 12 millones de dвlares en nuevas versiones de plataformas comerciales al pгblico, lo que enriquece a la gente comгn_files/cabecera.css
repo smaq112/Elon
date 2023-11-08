@@ -1,0 +1,1011 @@
+﻿#pbs_billboard_bajo_cabecera{ max-width: 62.250rem;margin: 0 auto;}
+.cabecera {max-width: 62.250rem; width: 100%; margin: 0 auto; background-color:#fff; }
+.cabecera .visible { z-index: 301; }
+.principal:not(.principal--fijo) .cabecera__interior{border-bottom: 0.063rem solid #EBEBEB;}
+.cabecera__interior:after { content: ''; display: table; clear: both; }
+.cabecera-superior { font-size: 0.625rem; color: #333333; text-transform: uppercase; }
+.cabecera-superior a { }
+.cabecera-superior .usuario { font-size: 0.688rem; }
+.cabecera-superior__interior { border-bottom: 0.063rem solid #E8E8E8;/* padding-top: 0.5rem;*/ position: relative; }
+.cabecera-superior__interior:after { content: ''; display: table; clear: both; }
+.contenedor_izquierda { float: left; width: 30%; min-height: 1px;}
+.contenedor_izquierda twc-header-global-weather{display: inline-block; top: -2px; position: relative; z-index: 1;}
+.cabecera-fecha { line-height: 2.250rem; display: inline; }
+.cabecera-fecha-dia a{color:inherit;}
+.cabecera-fecha-dia a:hover{color:#f7cf3c; }
+.cabecera-fecha-dia a:before { content: '';  background: url(../../../iconos/v2.x/v2.1/varios/icono_hemeroteca.png) no-repeat center; display: inline-block; width: 15px; height: 14px; margin-right: 2px;position: relative;top:2px; background-size: contain;}
+.cabecera-fecha-dia a:hover:before{background-image: url(../../../iconos/v2.x/v2.1/varios/icono_hemeroteca_azul.png);}
+.cabecera-fecha-actualizado:before { content: '|'; left: 0; z-index: 5; color: #C9C9C9; }
+.cabecera-fecha-actualizado span { display: none; padding-left: 0.250rem; font-weight: 700; }
+.boton_hemeroteca { text-indent: 0; width: auto; height: auto; background: none; }
+.contenedor_centro { float: left; width: 40%; position: relative; text-align: center; display: none; margin-left: 30%; }
+.contenedor_izquierda + .contenedor_centro { margin-left: 0; }
+.contenedor_centro .ediciones .ediciones-titulo { display: none; }
+.boton_ediciones { display: none; }
+.contenedor_centro .ediciones { margin: 0 auto; line-height: 1.750rem; }
+.contenedor_centro .ediciones-navegacion { text-align: center; }
+.ediciones-navegacion-listado { display: inline-block; vertical-align: top; }
+.ediciones li { display: inline; position: relative; }
+.ediciones-navegacion abbr[title]{border: none;text-decoration: none;}
+.contenedor_centro .ediciones li a { color: #333333; font-weight: 500; position: relative; line-height:  2.250rem; display: inline-block; }
+.contenedor_centro .ediciones li:before { content: '|'; left: 0; z-index: 5; color: #C9C9C9;  padding: 0 0.225rem 0 .14rem; }
+.contenedor_centro .ediciones li:first-child:before { display: none; }
+.contenedor_centro .ediciones .activo a { color: #f7cf3c; font-weight: 700; }
+.contenedor_centro .ediciones .activo a:after { position: absolute; bottom: 0; left: 0; content: ''; height: 0.188rem; background-color: #006CA0; width: 100%; }
+.contenedor_derecha { position: absolute; top: 0; right: 0; z-index:150;}
+.contenedor_derecha .boton_cerrar { float: right; height: 2.250rem; width: 2.250rem; background-color: #fff; border-radius: 100%; line-height: 1; }
+.usuario { position: relative; float: left; text-transform: none; text-align: center; }
+.usuario__interior { position: absolute; top: 0.062rem; right: -1.063rem; background-color: #F7F7F7; border-style: solid; border-color: rgba(193,187,187,.2); border-width: 0 0.063rem 0.250rem; width: 18.000rem; z-index: 150; padding: 0.938rem; display: none; }
+.usuario__interior .boton_cerrar { position: absolute; top: 0.625rem; right: 0.625rem; z-index: 150; }
+.boton_usuario:before { content: '\e90f'; }
+.usuario-estado { clear: both; }
+.usuario-registro { line-height: 3rem; border-bottom: 0.063rem dotted #CBCBCB; display: block; color: #545454; }
+.usuario-registro a { font-weight: bold; }
+.usuario-registro a:after { content: '\00bb'; }
+.usuario-estado [class*="boton_"] { width: auto; height: auto; background: #006CA0; color: #fff; font-size: 0.750rem; line-height: 2.188rem; border-radius: 0.125rem; text-transform: uppercase; font-weight: 700; margin-top: 0.938rem; clear: both; float: none; }
+.usuario-nombre { line-height: 1.750rem; font-size: 0.875rem; font-weight: normal; display: block; color: #2B2B2B; text-align: left; border-bottom: 0.063rem dotted #CBCBCB; padding-bottom: 0.563rem; padding-left: 1.750rem; background-repeat: no-repeat; position: relative; }
+.usuario-nombre:before { content: '\e90f'; font-family: 'Iconos Pais'; font-size: 1.750rem; line-height: 1.750rem; position: absolute; left: 0; top: 0; text-align: left; }
+.boton_usuario { text-align: center; }
+.boton_usuario img { max-width: 1.500rem; height: auto; border-radius: 100%; margin: 0 auto; pointer-events: none; position: relative; }
+a.boton_usuario img { margin-top: 0.68rem; }
+@media (min-width:48em){ .principal:not(.principal--fijo) a.boton_usuario img { margin-top: 0.3rem; } }
+.usuario-estado .foto { float: left; margin: 0.938rem 0.625rem 0.938rem 0; border-radius: 100%; overflow: hidden; max-width: 5.000rem; }
+.usuario-estado .boton_desconectar { background-color: #B9B9B9; }
+.usuario-menu [class*="boton_"] { display: block; text-indent: 0; width: auto; height: auto; }
+.visible .usuario__interior { display: block; }
+.usuario-acciones { float: left; margin-left: 0.625rem; padding-top: 1.125rem; font-size: 0.688rem; }
+.usuario-acciones li { position: relative; text-align: left; }
+.usuario-acciones li:before { content: '\00b7'; position: absolute; top: 0; left: -0.500rem; line-height: 1.125rem; font-size: 1.125rem; display: block; font-weight: 700; color: #006CA0; }
+.usuario-acciones [class*="boton_"] { display: inline-block; background: none; text-transform: none; color: #333333; clear: none; line-height: 1.125rem; margin: 0; }
+.buscador { position: relative; float: left; }
+.buscador__interior { position: absolute; top: 0; right: 0; background-color: #F2F2F2; position: absolute; top: 0; right: 0; z-index: 150; width: 20rem; display: none; }
+.buscador__interior [class*="boton_"] { float: right; }
+.buscador-formulario { float: left; }
+.buscador-formulario input { float: left; padding: 0.5rem 0.625rem; width: 15.500rem; font-size: 0.813rem; line-height: 1.250rem; color: #535353; }
+.buscador-formulario input::-webkit-input-placeholder {
+color: #535353;
+}
+.buscador-formulario input:-moz-placeholder {
+color: #535353;
+}
+.buscador-formulario input::-moz-placeholder {
+color: #535353;
+}
+.buscador-formulario input:-ms-input-placeholder {
+color: #535353;
+}
+
+.contenedor_derecha .navegacion-sucripcion{float:left;position:static;}
+
+.visible .buscador__interior { display: block; }
+.elpais { position: relative; float: left; margin: 0.5rem 0; z-index: 6; }
+.elpais-menu { position: absolute; top: auto; left: 0; z-index: 152; }
+.elpais-menu__interior { display: none; }
+.boton_elpais-menu { width: 3rem; height: 3rem; position: relative; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; background: none; }
+.boton_elpais-menu span { display: block; position: absolute; height: 0.125rem; width: 40%; background: #000; border-radius: 0; opacity: 1; left: 30%; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out; text-indent: -9999px; }
+.boton_elpais-menu span:nth-child(1) { top: 1.125rem; }
+.boton_elpais-menu span:nth-child(2), .boton_elpais-menu span:nth-child(3) { top: 1.500rem; }
+.boton_elpais-menu span:nth-child(4) { top: 1.875rem; }
+.visible .boton_elpais-menu span:nth-child(1) { top: 1.125rem; width: 0%; left: 50%; }
+.visible .boton_elpais-menu span:nth-child(2) { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.visible .boton_elpais-menu span:nth-child(3) { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.visible .boton_elpais-menu span:nth-child(4) { top: 1.125rem; width: 0%; left: 50%; }
+.elpais-menu .boton_cerrar { position: relative; background-color: #F5F5F5; }
+.elpais-menu .boton_cerrar span { display: block; position: absolute; height: 0.125rem; width: 40%; background: #000; border-radius: 0; opacity: 1; left: 30%; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out; text-indent: -9999px; }
+.elpais-menu .boton_cerrar span:nth-child(1) { top: 1.125rem; }
+.elpais-menu .boton_cerrar span:nth-child(2), .boton_elpais-menu span:nth-child(3) { top: 1.500rem; }
+.elpais-menu .boton_cerrar span:nth-child(4) { top: 1.875rem; }
+.visible.elpais-menu .boton_cerrar span:nth-child(1) { top: 1.125rem; width: 0%; left: 50%; }
+.visible.elpais-menu .boton_cerrar span:nth-child(2) { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.visible.elpais-menu .boton_cerrar span:nth-child(3) { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.visible.elpais-menu .boton_cerrar span:nth-child(4) { top: 1.125rem; width: 0%; left: 50%; }
+.visible .elpais-menu__interior { position: absolute; top: 0; left: 0; width: 100%; z-index: 150; display: block; }
+.elpais-logo { float: left; display: inline-block; margin-left: 3rem; }
+.elpais-logo a { display: inline-block;z-index:300 }
+/*.elpais-logo a span { display: block; width: 8.125rem; height: 3rem; background: url(http://ep01.epimg.net/iconos/v1.x/v1.4/logos/cabecera_interior.svg) no-repeat 0 0.438rem; background-size: auto 1.875rem; text-indent: -9999px; }*/
+.cabecera-seccion { /*border-bottom: 0.063rem solid #EBEBEB;*/ }
+.cabecera-seccion--personalizada { border-bottom: none; }
+.seccion-migas { font-family: 'Majerit', serif; font-weight: 500; font-size: 2rem; line-height: 2.125rem; text-transform: uppercase; padding: 0.938rem 0.5rem 0.938rem 0; float: right; }
+.seccion-migas .sin_enlace{color:#f7cf3c;}
+.seccion-migas .miga { display: inline-block; }
+.seccion-submenu, .contenedor_barra_etiquetas { clear: both; float: none; text-align: center; font-weight: normal; background-color: #F5F5F5; font-size: 0.750rem; color: rgba(51,51,51,.8); text-transform: uppercase; border-top: 0.063rem solid #EBEBEB; margin-bottom: -0.063rem; }
+.contenedor_barra_etiquetas .encabezado, .contenedor_barra_etiquetas .mastemas{display:none;}
+.seccion-submenu__interior { border-top: 0.250rem solid #F2F2F2; padding: 0 0.625rem; }
+.seccion-submenu-listado, .contenedor_barra_etiquetas .contenido { margin: 0 auto; display: inline-block; }
+.contenedor_barra_etiquetas .contenido{border-top: 0.250rem solid #F2F2F2;padding: 0 0.625rem;overflow-x: scroll;white-space: nowrap;display:block;}
+.seccion-submenu li, .contenedor_barra_etiquetas .contenido li { display: inline; }
+.seccion-submenu li a, .contenedor_barra_etiquetas .contenido li a { display: inline-block; font-size: 0.750rem; line-height: 3rem; padding: 0 0.250rem; color: rgba(51,51,51,.8); font-weight: 500; }
+.seccion-submenu-navegacion { overflow-x: scroll; white-space: nowrap; }
+.seccion-submenu-navegacion::-webkit-scrollbar {display: none;}
+.seccion-submenu-navegacion-listado { height: 3rem; white-space: nowrap; display: inline-block; display: inline-block; vertical-align: top; }
+.seccion-submenu-encabezado { display: none; }
+.principal--fijo .cabecera-seccion--personalizada .seccion { display: none; }
+.cabecera-seccion--personalizada .seccion-submenu { display: none; }
+.cabecera-agrupador > *, .cabecera-agrupador > div, .cabecera-agrupador > a { display: none; }
+.cabecera-agrupador > .agrupador { display: inline; }
+.principal--fijo { }
+.principal--fijo .cabecera { position: fixed; z-index: 1300; width: 100%; max-width: none; top: 0; left: 0; border-bottom: none; }
+.principal--fijo .cabecera__interior { max-width: 62.500rem; margin: 0 auto; position: relative; min-height: 3rem; }
+.principal--fijo .contenedor_centro { display: none; }
+.principal--fijo .contenedor_izquierda { display: none; }
+.principal--fijo .cabecera-superior { position: absolute; right: 0; top: 0; z-index:152; }
+.principal--fijo .cabecera-superior__interior { border: none; padding: 0; }
+.principal--fijo .seccion-submenu, .principal--fijo .contenedor_barra_etiquetas { display: none; }
+.principal--fijo .usuario .boton_usuario { height: 3rem; width: 3rem; }
+.principal--fijo .buscador .boton_buscador { height: 3rem; width: 3rem; }
+.principal--fijo .seccion-migas { font-size: 1.438rem; line-height: 2rem; padding: 0.5rem; }
+.principal--fijo .contenedor_derecha { top: 0; width: 6rem; }
+.principal--fijo .cabecera-subseccion .miga_seccion { display: none; }
+.principal--fijo .usuario__interior { top: 0; right: -0.063rem; }
+.principal--fijo .boton_buscador:after { top: 1.188rem; }
+.principal--fijo .elpais-logo a span { background-position: center; }
+
+/* MENU */
+.visible.elpais-menu { width: 100%; color: #A5A5A5; }
+/*.visible.elpais-menu { border-bottom: 0.063rem solid rgba(100,100,100,.2); }*/
+.elpais-menu__interior { z-index: 150; width: 100%; position: absolute; top: 0; left: 0; max-width: 61.250rem; font-size: 0.750rem; line-height: 1rem; text-transform: uppercase; font-weight: 500; border-bottom: 0.188rem solid #E3E2E2; }
+.elpais-menu__interior { position: absolute; top: 0; left: 0; z-index: 150; }
+.elpais-navegacion { background-color: #F5F5F5; padding-bottom: 0.8rem; }
+.elpais-navegacion:after { content: ''; display: table; clear: both; }
+.navegacion li a { color: #333333; text-align:left; }
+.navegacion li button { color: #333333; text-transform:uppercase; }
+.elpais-portada { float: left; line-height: 3rem; display: inline-block; padding-left: 0.750rem; position: relative; color: #333333; font-weight: bold; }
+.elpais-portada:after { content: '\00bb'; position: absolute; top: -0.063rem; right: -0.625rem; }
+.elpais .ediciones { padding: 1.188rem 2% 0; background-color: #F5F5F5; position:relative; }
+.principal--fijo .elpais .ediciones { clear: both; padding: 1.188rem 2%; }
+.elpais .ediciones__interior:after { content: ''; display: table; clear: both; }
+.elpais .navegacion-titulo { display: block; line-height: 2.375rem; }
+.elpais .navegacion ul { border: none; }
+.elpais .navegacion_secciones--submenu{ position:relative;}
+.elpais .navegacion_secciones--submenu .subnavegacion{display:none; position:absolute; top:0; left:100%; background:#FFF; padding:0 1rem; z-index:300; width:200px; box-shadow: 4px 0px 0px 0px rgba(0,0,0,0.2); font-weight:200 }
+.elpais .navegacion_secciones--submenu.visible{ background:#FFF;}
+.elpais .navegacion_secciones--submenu a + button { display:block; width:20px; height:20px; content:''; position:absolute; top:0.3rem; right:1rem;transition: all 0.35s ease-in-out; text-indent: -999em; overflow: hidden; border-left: 1px solid #babac6; padding-left: 0.688rem; }
+.elpais .navegacion_secciones--submenu button:after { content: ''; background:url(http://ep01.epimg.net/iconos/v2.x/v2.0/flecha-submenu.svg) center right no-repeat; width: 5px; height: 7px; display: block; position: absolute; top: 12px; transition: all 0.35s ease-in-out; right: 15px; }
+.elpais .navegacion_secciones--submenu button:before { content: ''; display:block; width:20px; height:20px; content:''; position:absolute; top:0.3rem; right:1rem;transition: all 0.35s ease-in-out; border-left: 1px solid #babac6; padding-left: 0.688rem; }
+.elpais .navegacion_secciones--submenu a + button:after { right: auto; top: 8px; }
+.elpais .navegacion_secciones--submenu a + button:before { content: none; display: none; }
+.alto_contraste .elpais .navegacion_secciones--submenu a + button,
+.alto_contraste .elpais .navegacion_secciones--submenu button:before { border-left-color: white; }
+.alto_contraste .elpais .navegacion_secciones--submenu button:after { background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/flecha-submenu_blanco.svg); }
+.elpais .navegacion_secciones--submenu.visible button:after { transform:rotate(180deg);}
+.elpais .navegacion_secciones--submenu.visible:before{ content:'';}
+.elpais .navegacion_secciones--submenu.visible li:before{ content:'';}
+.elpais .navegacion_secciones--submenu.visible .subnavegacion{ display:block;}
+
+.elpais .ediciones-titulo { display: inline-block; float: left; margin-right: 0.625rem; }
+.elpais .ediciones a { position: relative; color: #333; padding-left: 1.375rem; display: inline-block; padding-right: 0.625rem; }
+.elpais .ediciones .activo a:after { content: ''; display: block; width: 0.750rem; height: 0.750rem; background-color: #f7cf3c; border-radius: 100%; position: absolute; top: 0.063rem; left: 0.125rem; border: 0.063rem solid #fff; }
+
+.elpais .ediciones a:before { content: ''; display: block; width: 1rem; height: 1rem; position: absolute; border: 0.063rem solid #D3D3D3; border-radius: 100%; position: absolute; top: -0.063rem; left: 0; box-shadow: 0.063rem 0.063rem 0 #fff; }
+.elpais-navegacion { position: relative; padding-top: 1rem; clear: both; }
+.salida_portada .principal:not(.principal--fijo) .elpais-navegacion { clear: none; float: left; width: 100%; margin-top: -40px; }
+.elpais-navegacion:before { content: ''; position: absolute; top: 0; left: 2%; width: 96%; height: 0.063rem; display: block; background-color:#E6E6E6; z-index: 501; }
+.elpais .boton_cerrar { float: left; height:3.55rem; padding-bottom:0.55rem; z-index:500; }
+.elpais .boton_cerrar:before { display: none; }
+.elpais .boton_cerrar span { background-color: #000; }
+.elpais-social { height: 3rem; margin-top: 0.375rem; }
+.elpais-social .elpais-social-nombre{    display: inline-block; float: left; padding-right: 0.375rem; text-transform: uppercase; line-height:2.250rem; margin:0.375rem 0 0 0.375rem}
+.elpais-social li { display: inline; }
+.elpais-social li [class^="boton_"] { height: 2.250rem; width: 2.250rem; font-size: 2rem; line-height: 2.250rem; margin: 0.375rem 0 0 0.375rem; }
+.elpais-social li [class^="boton_"]:before { border-radius: 100%; background-color: #FFF; }
+.altocontraste { position: absolute; top: 0; right: 6.5rem; padding: 1.125rem 2% 0; }
+.cabecera .boton_altocontraste { display: inline-block; text-indent: 0; height: auto; width: auto; background: none; line-height: 1.125rem; font-size: 0.750rem; }
+.boton_altocontraste .control { background-color: #BEBEBE; border-radius: 1.250rem; content: " "; cursor: pointer; display: inline-block; height: 1.125rem; pointer-events: none; transition-duration: .5s; transition-property: background-color, border; transition-timing-function: ease-in-out; border: 0.063rem solid #AAA; width: 2.500rem; position: relative; text-indent: -9999px; }
+.boton_altocontraste .control-punto { background-color: #fff; border-radius: 100%; display: block; height: 0.938rem; width: 0.938rem; left: 0.063rem; position: absolute; top: 0.063rem; transition: all 0.5s ease-in-out 0s; }
+.activo .control-punto { left: auto; right: 0.063rem; }
+.boton_altocontraste .boton-nombre { display: inline-block; float: left; padding-right: 0.375rem; text-transform: uppercase; color:#787878; font-weight:500; }
+.navegacion_suplementos a, .navegacion_otras a { position: relative; }
+.navegacion_suplementos a:after, .navegacion_otras a:after {content: ''; font-family: 'Iconos Pais'; display: block; height: 4.125rem; line-height: 4.125rem; position: absolute; top: 0; left: 50%; width: 4.125rem; font-size: 3.125rem; background: #FFF; border-radius: 100%; margin: 0 0 0 -2.06rem;}
+.eps a:after { content: '\e928'; font-size: 2.6rem;}
+.babelia a:after { content: '\e937'; font-size: 2.6rem;}
+.el_viajero a:after { content: '\e93a'; font-size: 2.6rem;}
+.ideas a:after { content: '\e938'; }
+.negocios a:after { content: '\e939'; font-size: 2.6rem;}
+.icon a:after { content: '\e91e';font-size: 2.6rem;}
+.tentaciones a:after { content: '\e91d';font-size: 2.6rem;}
+.design a:after { content: '\e93c';font-size: 2.6rem;}
+.verne a:after { content: '\e927'; font-size: 3rem;}
+.el_pais_mas a:after { content: '\e926'; }
+.planeta_futuro a:after { content: '\e91c'; }
+.el_comidista a:after { content: '\e910'; }
+.epv a:after { content: '\e925'; }
+.buenavida a:after { content: '\e922';font-size: 2.6rem;}
+.smoda a:after { content: '\e93b';font-size: 3.2rem;}
+.mamas_papas a:after {content: '\e92a';font-size: 2.7rem;}
+.retina a:after {content: '\e92d';}
+.cinco_dias a:after {content: '\e92c';}
+
+.boton_elpais-menu span { pointer-events: none; }
+.elpais .boton_cerrar span { pointer-events: none; }
+/* FIN MENU */
+
+.navegacion-sucripcion{ position:absolute; right:2%; bottom:1.26rem}
+.navegacion-sucripcion ul{}
+.navegacion-sucripcion ul li{ display:inline;}
+.navegacion-sucripcion ul li a{ display:inline-block; height: 2.250rem;line-height: 2.250rem; font-size:0.688rem; margin-left:1rem;position:relative;}
+.navegacion-sucripcion ul .suscribete a{ background:#f7cf3c; color:#FFF; padding: 0 1.5rem; }
+.navegacion-sucripcion ul .newsletter a{ color:#000; padding-right:2rem;}
+.navegacion-sucripcion ul .newsletter a:after{    content: '\e92b'; font-family: 'Iconos Pais'; font-size: 1.3rem; top: 0; position: absolute;}
+
+.contenedor_derecha .navegacion-sucripcion{float:left;position:static;display:none;}
+.contenedor_derecha .navegacion-sucripcion ul li{margin-left:0;}
+.contenedor_derecha .navegacion-sucripcion ul li a{padding-left:0.625rem;padding-right:0.625rem;}
+.contenedor_derecha .navegacion-sucripcion ul .suscribete a{background-color: #f7cf3c;color:#000;font-weight:700;border-right:0.063rem solid rgba(228,228,228,.7);}
+.contenedor_derecha .navegacion-sucripcion ul .newsletter a{padding-right:.85rem;font-weight:500;}
+
+.tamanoletra{position:absolute; top:0; right:2%;}
+.tamanoletra-nombre{padding-right:0.625rem;}
+.tamanoletra > *{float:left;line-height:3rem;display:inline-block;}
+.tamanoletra:after{content:'';display:table;clear:both;}
+.tamanoletra button{height:2.250rem;width:2.6rem;font-size:1.2rem; margin:0.5rem 0 0 0.175rem; line-height:2.250rem;border:none;border-radius:0.125rem; background:rgba( 0,0,0,0.1); display:block;  position:relative; color:#444444;}
+.tamanoletra button sup{font-size:1.1rem; }
+.tamanoletra .activo{background:#444;color:#fff;}
+
+.agrupador-menu-navegacion-listado { vertical-align: top; }
+.agrupador-menu-navegacion-listado li { display: inline; }
+.agrupador-menu-navegacion-listado li a { display: inline-block; }
+.agrupador__interior { position: relative; }
+
+@media (min-width:600px) {
+	.salida_portada .principal:not(.principal--fijo) .cabecera .cabecera__interior,
+	.salida_portadilla .principal:not(.principal--fijo) .cabecera .cabecera__interior{margin-left:.688rem;margin-right:.688rem; }
+}
+
+/* 1000PX */
+ @media (min-width:62.500em) {
+.principal--fijo { padding-top: 9.500rem; }
+.principal--fijo .cabecera-seccion { border-bottom: none; }
+.cabecera-fecha-actualizado span { display: inline; }
+.seccion-submenu-navegacion, .contenedor_barra_etiquetas .contenido { overflow: hidden; }
+.principal--fijo .cabecera [class^="boton_"]:before { color: #fff; }
+.principal--fijo .elpais-portada { color: #fff; }
+.principal--fijo .elpais { margin: 0 auto; position: absolute; top: 0; left: 0; z-index: 50; }
+.principal--fijo .cabecera { background-color: #f7cf3c; }
+.principal--fijo .seccion-migas { float: none; text-align: center; }
+.principal--fijo .seccion-migas a { color: #fff; }
+.principal--fijo .seccion-migas .sin_enlace{color:#fff;}
+.principal--fijo .seccion-migas .miga_patrocinador { display: none; }
+.principal--fijo .elpais-logo a span { background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/el_pais_blanco.svg); background-size: auto 1.625rem; background-position: left 0.563rem; }
+.principal--fijo .agrupador { background: none; }
+.principal--fijo .agrupador__interior { background: none; text-align: center; }
+.principal--fijo .agrupador-nombre { background: transparent; font-family: "Majerit", serif; font-size: 1.438rem; line-height: 2rem; padding: 0.5rem 0; text-transform: uppercase; margin: 0 auto; text-indent: 0; display: inline-block; float: none; }
+.principal--fijo .agrupador-nombre a { color: #fff; text-indent: 0; width: auto; height: auto; padding: 0; background: transparent; }
+.principal--fijo .agrupador-nombre a span > * { display: inline; }
+.principal--fijo .agrupador-nombre a span strong { font-weight: normal; }
+.principal--fijo .agrupador-menu { display: none; }
+.principal--fijo .boton_elpais-menu span { background: #fff; }
+.principal--fijo .visible .boton_elpais-menu span { background: #000; }
+.principal--fijo .buscador-formulario { background-color: #01547C; }
+.principal--fijo .buscador-formulario input { background-color: #01547C; color: #fff; }
+.principal--fijo .buscador-formulario input::-webkit-input-placeholder {
+color: #fff;
+}
+ .principal--fijo .buscador-formulario input:-moz-placeholder {
+color: #fff;
+}
+ .principal--fijo .buscador-formulario input::-moz-placeholder {
+color: #fff;
+}
+ .principal--fijo .buscador-formulario input:-ms-input-placeholder {
+color: #fff;
+}
+.principal--fijo .buscador__interior { background-color: #01547C; }
+.principal--fijo .contenedor_derecha .buscador .boton_cerrar { background-color: #01547C; }
+.principal--fijo .contenedor_derecha .buscador .boton_cerrar { width: 3rem; height: 3rem; }
+.principal--fijo .contenedor_derecha .buscador .boton_cerrar:before{line-height:2.625rem;}
+.principal--fijo .contenedor_derecha .usuario .boton_cerrar{z-index:2;}
+.principal--fijo .contenedor_derecha .usuario .boton_cerrar:before{color:#000;}
+.principal:not(.principal--fijo) .contenedor_derecha .usuario .boton_usuario{background-color:#F7F7F7;}
+.principal:not(.principal--fijo) .contenedor_derecha .navegacion-sucripcion{display:block;}
+
+.principal--fijo .cabecera-seccion--personalizada .seccion { display: none; }
+.principal--fijo .elpais-social li [class^="boton_"]:before { background-color: #f7cf3c; }
+.principal--fijo .cabecera {animation: fadeIn .2s; -moz-animation: fadeIn .2s; -webkit-animation: fadeIn .2s; -o-animation: fadeIn .2s; -ms-animation: fadeIn .2s; }
+/* MENU */
+.principal--fijo .elpais .boton_cerrar { background-color: #f7cf3c; background-image: none; height:3rem; padding-bottom:0;  }
+.principal--fijo .elpais .boton_cerrar:before { display: none; }
+.principal--fijo .elpais .boton_cerrar span { background-color: #fff; }
+.principal--fijo .elpais-menu__interior {/* background-color: #01547C;*/ border-bottom-color:#01547C; top:-48px;}
+.principal--fijo .elpais .ediciones { background-color: #f7cf3c; }
+.principal--fijo .elpais-navegacion { background-color: #f7cf3c; }
+.principal--fijo .visible.elpais-menu { width: 100%; color: #519ABF; z-index:149; top:48px;}
+.principal--fijo .elpais .ediciones a, .principal--fijo .navegacion li a, .principal--fijo .navegacion li button { color: #fff; }
+.principal--fijo .elpais-menu__interior { max-width: 62.500rem; }
+.principal--fijo .elpais .ediciones .activo a:after { background-color: #fff; border-color: #f7cf3c; }
+.principal--fijo .elpais .ediciones a:before { box-shadow: none; }
+.principal--fijo .elpais .navegacion ul { border-top-color: #519ABF; }
+.principal--fijo .navegacion_secciones li:before, .principal--fijo .navegacion_ademas li:before { color: #fff; }
+.principal--fijo .navegacion_suplementos a:after, .principal--fijo .navegacion_otras a:after { color: #f7cf3c; }
+.principal--fijo .altocontraste{ top:3rem;}
+.principal--fijo .boton_altocontraste .boton-nombre{ color:#519ABF;}
+.principal--fijo .boton_altocontraste .control{ background:#FFF; border-color:#FFF; }
+.principal--fijo .boton_altocontraste .control-punto{ background:#f7cf3c;}
+.principal--fijo .tamanoletra{ top:3rem;}
+.principal--fijo .tamanoletra button{ background:#FFF; color:#f7cf3c;}
+.principal--fijo .navegacion-sucripcion ul li.suscribete a{ background:#FFF; color: #01547C;}
+.principal--fijo .navegacion-sucripcion ul li.newsletter a{ color:#FFF;}
+.principal--fijo .navegacion{border-right: 1px solid #1B7BAB;}
+.principal--fijo .navegacion-inferior{ border-top: 1px solid #1B7BAB;}
+.principal--fijo .elpais-navegacion:before { background-color:#1B7BAB; }
+.principal--fijo .elpais .ediciones:before { content: ''; position: absolute; top: 0; left: 2%; width: 96%; height: 0.063rem; display: block; background-color:#1B7BAB; }
+.principal--fijo .elpais .navegacion_secciones--submenu:not(.visible) a + button,
+.principal--fijo .elpais .navegacion_secciones--submenu:not(.visible) button:before { border-left-color: white; }
+.principal--fijo .elpais .navegacion_secciones--submenu:not(.visible) button:after {  background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/flecha-submenu_blanco.svg); }
+.elpais .navegacion_secciones--submenu.visible a, .elpais .navegacion_secciones--submenu.visible button{ color:#000;}
+.principal--fijo .tamanoletra .activo{color:#fff;background-color:#519ABF;}
+
+.cabecera-seccion.visible .seccion{position: fixed;top:0;left: 0;width: 100%;}
+.salida_portada .cabecera-seccion.visible .seccion{top:47px;}
+.cabecera-seccion.visible .seccion-submenu{display: block;margin: 0 auto;border-top:none;border-bottom: 0.063rem solid #EBEBEB; }
+.cabecera-seccion.visible .seccion-submenu__interior {border-top: none;border-bottom: 0.250rem solid #F2F2F2;padding: 0 0.625rem;}
+.cabecera-seccion.visible .seccion-submenu-navegacion-listado{height: 2.7rem;}
+.cabecera-seccion.visible .seccion-submenu-navegacion{overflow: hidden;}
+
+.navegacion_secciones--submenu:hover{background: #FFF;}
+.navegacion_secciones--submenu:hover .subnavegacion{display: block;}
+.navegacion_secciones--submenu:hover:before{display: none;}
+.navegacion_secciones--submenu:hover button:after {transform: rotate(180deg);}
+.principal--fijo .elpais .navegacion_secciones--submenu:hover a, .principal--fijo .elpais .navegacion_secciones--submenu:hover button{color: #000;}
+.principal--fijo .elpais .navegacion_secciones--submenu:not(.visible):hover a + button, .principal--fijo .elpais .navegacion_secciones--submenu:not(.visible):hover button:before{color: #000;border-left-color:#babac6;}
+.principal--fijo .elpais .navegacion_secciones--submenu:hover button:after {background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/flecha-submenu.svg);}
+
+/* FIN MENU */
+}
+/* 768PX */
+ @media (min-width:48em) {
+.principal:not(.principal--fijo) .contenedor_derecha .boton_usuario, .principal:not(.principal--fijo) .contenedor_derecha .boton_buscador, .principal:not(.principal--fijo) .contenedor_derecha .boton_buscar, .principal:not(.principal--fijo) .contenedor_derecha .buscador .boton_cerrar { height: 2.250rem; width: 2.250rem; line-height: 2.250rem; }
+.principal--fijo .buscador-formulario input { width: 14.000rem; padding: 0.875rem 0.625rem; }
+.usuario-estado [class*="boton_"] { width: auto; height: auto; }
+.boton_buscador:before { }
+.boton_buscador:after { position: absolute; top: 0.938rem; left: 0; border-left: 0.063rem solid #C9C9C9; content: ''; display: block; height: 0.625rem; }
+.principal:not(.principal--fijo) .contenedor_derecha .boton_cerrar { line-height: 2.250rem; z-index:152 }
+.contenedor_derecha .boton_cerrar:after { background-color: #fff; border-radius: 100%; color: #333; line-height: 2.250rem; }
+.contenedor_centro { display: block; }
+.contenedor_derecha { position: absolute; top: 0; right: 0; z-index: 50; }
+/* MENU */
+.navegacion { float: left; width: 18%; padding:0 0 0 2%; margin-bottom:2%; border-right:1px solid #E6E6E6; }
+.navegacion_ademas{ border:none;}
+.navegacion li { padding: 0.5rem 0; }
+.navegacion li.promociones,
+.navegacion li.estudiantes,
+.navegacion li.escuela { padding-bottom: 0; padding-top: 0; font-size: 0.688rem; font-weight: 700; }
+.navegacion_secciones li:before, .navegacion_ademas li:before { content: '\25A0'; color: #f7cf3c; font-size: 0.375rem; line-height: 0.5rem; display: block; position: absolute; left: 0; top: 0.7rem; }
+.navegacion_ademas li.promociones:before,
+.navegacion_ademas li.estudiantes:before,
+.navegacion_ademas li.escuela:before { top: 0.3rem; }
+.navegacion_secciones li, .navegacion_ademas li { padding-left: 0.5rem; position: relative; text-align:left; }
+.navegacion_ademas li { text-transform: none; }
+.navegacion_suplementos{  width: 64%;}
+.navegacion_suplementos a, .navegacion_otras a { font-size: 0.563rem; line-height: 0.688rem; display: block; padding-top: 4.625rem; text-align: center; }
+.navegacion_suplementos li  a, .navegacion_otras li a { text-align:center;}
+.navegacion_suplementos li { float: left; width: 20%; margin-bottom: 1.65rem;}
+.navegacion_suplementos li:nth-of-type(3n + 1) { margin-left: 0; }
+.navegacion_otras li:nth-of-type(2n + 1) { margin-left: 0; }
+
+/*.navegacion_otras { float: left; width: 24%; }
+.navegacion_otras li { float: left; width: 50%; }*/
+.navegacion-inferior{ clear:both; width:auto;margin: 2% 2% 0; border-top:1px solid #E6E6E6; }
+.tamanoletra-nombre{ display:none;}
+/* FIN MENU */
+
+
+}
+/* 999PX */
+ @media (max-width:62.438em) {
+.elpais { margin: 0; }
+.buscador-formulario input { width: 14.000rem; padding: 0.750rem 0.625rem; }
+.boton_buscar { }
+.buscador .boton_cerrar { margin: 0.375rem; }
+.principal--fijo .buscador-formulario input { width: 14.375rem; line-height: 1.250rem; }
+.principal--fijo .contenedor_derecha .buscador .boton_cerrar { margin: 0.375rem 0.375rem 0 0; }
+.principal--fijo .cabecera { background-color: #fff; -webkit-box-shadow: 0 0.125rem 0.313rem 0 rgba(50, 50, 50, 0.2); -moz-box-shadow: 0 0.125rem 0.313rem 0 rgba(50, 50, 50, 0.2); box-shadow: 0 0.125rem 0.313rem 0 rgba(50, 50, 50, 0.2); }
+.seccion-migas { font-size: 1.438rem; line-height: 2rem; padding: 0.5rem 0; }
+.principal--fijo .elpais { display: block; margin: 0; float: none; position: static; }
+.principal--fijo .elpais-logo { float: none; margin: 0 auto; text-align: center; display: block; }
+.principal--fijo .seccion { }
+.principal--fijo .cabecera-seccion { background-color: #F5F5F5; border-top: 0.063rem solid #EBEBEB; }
+.principal--fijo .cabecera-seccion:after { content: ''; display: table; clear: both; }
+.principal--fijo .seccion-migas { float: none; padding: 0.5rem; }
+.cabecera-seccion--personalizada.cabecera_fija .cabecera-seccion { display: none!important; }
+.cabecera-fecha{padding-left:.688rem;}
+.contenedor_centro { /*width: 50%;*/ }
+.ediciones li {font-size: .58rem;}
+.cabecera-seccion--personalizada .seccion-submenu { display: none; }
+.principal--fijo .cabecera-seccion { display: none; }
+}
+/* 999px 768px */
+ @media (max-width:62.438em) and (min-width:48em) {
+.seccion-migas { text-align: right; width: calc(100% - 13.750rem); padding-right: 0.5rem; }
+.principal--fijo .seccion-migas { width: auto; text-align: center; }
+/* MENU */
+.elpais-menu__interior { font-size: 0.688rem; }
+.elpais .navegacion_secciones--submenu:after{ right:0.5rem;}
+
+.principal--fijo .elpais .boton_cerrar { height: 3rem; padding:0;}
+.principal--fijo .altocontraste, .principal--fijo .tamanoletra { top:3rem;}
+.boton_altocontraste{font-size: 0.688rem; }
+/* FIN MENU */
+
+}
+/* 767PX */
+ @media (max-width:47.938em) {
+/* modificado */
+.cabecera-seccion--personalizada { position: relative; }
+.cabecera-seccion--personalizada .seccion-migas { font-family: 'Benton'; }
+.cabecera-seccion--personalizada .seccion-migas .miga { display: block; }
+.cabecera-seccion--personalizada .seccion { display: block; position: absolute; bottom: 0; width: 100%; }
+.principal--fijo .cabecera-seccion--personalizada .seccion { display: none; }
+.principal--fijo .cabecera-seccion--personalizada { padding-bottom: 0; }
+
+/* fin modificado */
+
+
+	/* ORIGINAL .cabecera-seccion--personalizada .seccion{display:none;} */
+.cabecera-superior__interior { padding: 0; position: relative; }
+.elpais { float: none; position: relative; margin: 0; }
+.elpais-logo { float: none; text-align: center; display: block; margin: 0 auto; }
+.elpais-menu { position: absolute; top: 0; left: 0; }
+.altocontraste { padding-bottom: 0; top:0; }
+.cabecera-superior { position: relative;z-index:100;}
+.usuario-nombre{z-index:1;}
+.usuario .boton_cerrar{z-index:2;}
+.cabecera-superior__interior { border: none; }
+.contenedor_izquierda { display: none; }
+.cabecera-seccion { clear: both; float: none; background-color: #F5F5F5; }
+.seccion-migas { float: none; text-align: center; }
+.seccion-submenu, .contenedor_barra_etiquetas { display: none; }
+.cabecera-superior__interior { position: relative; }
+
+/* MENU */
+.elpais-menu__interior { transition: all .8s; left: -30rem; width: 60%; height: 100%; display: block; position: fixed; max-width: 30rem; opacity: 1; background:#ECECEC; }
+.visible .elpais-menu__interior { height: 100%; overflow-y: scroll; position: fixed; top: 0; left: 0; -moz-overflow-scrolling: touch; -webkit-overflow-scrolling: touch; background:#ECECEC; width: 60%; max-width: 30rem; }
+.navegacion { }
+.navegacion-titulo { padding-left: 3%; clear: both; }
+.elpais-navegacion{ padding-top:0;}
+.elpais .navegacion ul { padding-top: 0; }
+.navegacion ul:after { content: ''; display: table; clear: both; }
+.navegacion li { border-bottom: 0.063rem dotted #C9C9C9; float: left; width: 100%; }
+/*.navegacion li:nth-last-child(1):nth-child(odd){border:none;}*/
+.navegacion li a , .navegacion li button { color: #333333; display: block; line-height: 3rem; padding-left: 0.625rem; }
+
+.elpais .ediciones-titulo {/*float: none;*/ clear: both; margin-bottom: 1rem; }
+.ediciones-navegacion { /*padding-top: 0.938rem;*/ }
+.navegacion_suplementos a:after, .navegacion_otras a:after { left: 0.625rem; top: 0.375rem; height: 2.250rem; width: 2.250rem; background-size: 2.250rem; }
+.navegacion_suplementos li a, .navegacion_otras li a { padding-left: 3.25rem; }
+.navegacion_suplementos a:after, .navegacion_otras a:after { font-size: 1.500rem; margin:0; text-align:center; line-height: 2.250rem; }
+.alto_contraste .navegacion li a { padding-left: 3%!important; }
+.alto_contraste .navegacion_suplementos a:after, .alto_contraste .navegacion_otras a:after { display: none; }
+.tamanoletra{ top:0; right:2.5%;}
+
+.tamanoletra-nombre{ display:none;}
+.elpais .navegacion_secciones--submenu::after {top: 1.265rem;}
+.subnavegacion li { border-bottom: 0.063rem dotted #C9C9C9; float: left; width: 100%; }
+.ediciones li {  padding-right: 0.4rem; font-size:0.838em;}
+.elpais .navegacion_secciones--submenu:hover { background:inherit}
+.elpais .navegacion_secciones--submenu.visible .subnavegacion{ display: block; position: relative; left: 0; box-shadow: none; width: 100%; padding: 0; border-top: 0.063rem dotted #C9C9C9;}
+.elpais .navegacion_secciones--submenu.visible .subnavegacion li:last-child{ border-bottom:none;}
+.elpais .navegacion_secciones--submenu a + button,
+.elpais .navegacion_secciones--submenu button:before { border-left: none; top: .9rem; }
+.elpais .navegacion_secciones--submenu button:after {transform: rotate(90deg); }
+.elpais .navegacion_secciones--submenu.visible button:after {transform: rotate(-90deg);}
+.elpais-social { height: auto;margin-bottom: 20px; clear:both;}
+.elpais-social ul { clear:both;}
+.navegacion-sucripcion { position:relative; right:auto; bottom:auto;}
+/* FIN MENU */
+.agrupador-menu { display: none; }
+}
+/* 599PX */
+ @media (max-width:37.438em) {
+.cabecera { width: auto; margin: 0 -0.625rem;}
+.salida_portada .cabecera, .salida_portadilla .cabecera{margin:0 auto;}
+.principal--fijo .cabecera { margin: 0 auto; }
+/* MENU */
+.navegacion li { border-bottom: 0.063rem dotted #C9C9C9; float: none; width: auto; }
+.navegacion_suplementos a:after, .navegacion_otras a:after { display: none; }
+.elpais .ediciones-titulo { float: none; clear: both; }
+.ediciones-navegacion { padding: 0.938rem 0 0; width: 100%; }
+.ediciones-navegacion-listado:after { content: ''; clear: both; display: table; }
+.ediciones li { padding-left: 0; width: 50%; float: left; display: inline-block; margin-bottom: 0.938rem; }
+.navegacion li a, .navegacion_suplementos li a, .navegacion_otras li a { padding-left: 3%; }
+.elpais .ediciones { padding: 3.788rem 2% 1rem; clear: both; }
+.salida_portada .principal:not(.principal--fijo) .elpais-navegacion { clear: both; margin-top: 0; }
+.altocontraste{ top:58px; right: 0.7rem;}
+.principal--fijo .elpais_40a .elpais-logo .elpais-40aniversario { position: static; }
+
+/* FIN MENU */
+
+}
+/* 500PX */
+@media (max-width:31.250em) {
+.ediciones li { width: 50%; margin-bottom: 0.938rem; }
+.navegacion-sucripcion{ position:relative;padding: 0.6rem 0; right: auto;bottom: auto;}
+.navegacion-sucripcion .suscribete{ float:left;}
+.elpais-social{border-bottom: 0.063rem dotted #C9C9C9; padding:0.6rem; height:auto; margin:0;}
+.elpais-social li [class^="boton_"]{ margin-top:0;}
+.elpais-social .elpais-social-nombre{margin-top:0;}
+.tamanoletra {right: 1rem;}
+.elpais .ediciones{ padding-bottom:0; clear: both; }
+}
+/* 400PX */
+@media (max-width:25em) {
+.principal--fijo .usuario__interior { right: -2.875rem; }
+.boton_altocontraste .boton-nombre{ font-size:0.625rem}
+}
+/* 40 aniversario */
+
+.elpais_40a .elpais-logo { line-height: 3rem; }
+.elpais_40a .elpais-logo .elpais-40aniversario { display: inline-block; }
+.elpais_40a .elpais-logo .elpais-40aniversario span { text-indent: -9999px; line-height: 3rem; width: 3rem; display: inline-block; background: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/40a-rojo.svg) 0 0.875rem no-repeat; background-size: 2rem auto; }
+.alto_contraste .elpais_40a .elpais-logo .elpais-40aniversario span { background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/40a-blanco.svg)!important; }
+/* 767PX */
+@media(max-width:47.938em) {
+.elpais_40a .elpais-logo a span { background-size: auto 1.438rem; background-position: 0.125rem center; width: 6.375rem; }
+.elpais_40a .elpais-logo .elpais-40aniversario span, .principal--fijo .elpais_40a .elpais-logo .elpais-40aniversario span { background-size: 1.813rem auto; background-position: 0 1rem; }
+.principal--fijo .elpais .ediciones{padding-top: 3.788rem;}
+}
+/* 1000PX */
+ @media(min-width:62.500em) {
+.principal--fijo .elpais_40a .elpais-logo a span { width: 6.875rem; }
+.principal--fijo .elpais_40a .elpais-logo .elpais-40aniversario span { background: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/40a-blanco.svg) 0.250rem center no-repeat; background-size: 1.875rem auto; width: 3rem; }
+.principal--fijo .elpais_40a .elpais-logo .elpais-40aniversario span { background: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/40a-blanco.svg) 0.250rem center no-repeat; background-size: 1.875rem auto; width: 3rem; }
+}
+/* 768PX */
+ @media(min-width:48em) {
+.elpais_40a .elpais-logo { position: relative; }
+.elpais_40a .elpais-logo .elpais-40aniversario { position: absolute; top: 0; right: -3.125rem; z-index: 1; }
+.principal--fijo .elpais_40a .elpais-logo { text-align: center; z-index:151 }
+
+}
+.alto_contraste .elpais .boton_cerrar span, .alto_contraste .boton_elpais-menu span { background-color: #fff!important; }
+.alto_contraste .navegacion_secciones li:before, .alto_contraste .navegacion_ademas li:before { color: #fff; }
+.alto_contraste .elpais-logo a span { background-image: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/el_pais_blanco.svg); background-color: transparent!important; }
+.alto_contaste .buscador-formulario input { border: 0.063rem solid #fff; }
+.alto_contraste .boton_favoritos.inactivo, .alto_contraste .boton_correo.inactivo { display: none; }
+.alto_contraste .boton_comentarios .boton-contador { background: transparent!important; }
+.alto_contraste .compartir { border-bottom-width: 0; }
+.alto_contraste .cabecera-agrupador { display: none!important; }
+.alto_contraste .principal--fijo .cabecera-seccion--personalizada .seccion { display: block; }
+.alto_contraste .seccion-submenu__interior { border-top-width: 0; }
+.alto_contraste .elpais-menu { background-color: transparent!important; }
+.alto_contraste .contenedor_centro .ediciones .activo a:after { background-color: #fff; }
+.alto_contraste .buscador-formulario input { background-color: #333!important; }
+.alto_contraste .boton_altocontraste .control { background-color: #333!important; }
+.alto_contraste .cabecera-seccion--personalizada .seccion { display: block; }
+ @keyframes fadeIn { 0% {
+top:-3rem;
+}
+50% {
+top:-3rem;
+}
+100% {
+top:0
+}
+}
+@-moz-keyframes fadeIn { 0% {
+top:-3rem;
+}
+50% {
+top:-3rem;
+}
+100% {
+top:0
+}
+}
+@-webkit-keyframes fadeIn { 0% {
+top:-3rem;
+}
+50% {
+top:-3rem;
+}
+100% {
+top:0
+}
+}
+@-o-keyframes fadeIn { 0% {
+top:-3rem;
+}
+50% {
+top:-3rem;
+}
+100% {
+top:0
+}
+}
+/* Cabecera personalizada */
+.cabecera-seccion--personalizada .seccion { display: none; }
+.agrupador { clear: none; display: inline; }
+.agrupador-nombre { float: right; display: inline-block; }
+.agrupador-nombre a { text-align: left; text-indent: -9999px; height: 3rem; display: inline-block; }
+.agrupador-patrocinador { text-align: left; text-indent: -9999px; float: right; display: inline-block; height: 3rem; }
+.cabecera .boton_agrupador-menu { display: none; text-align: right; position: relative; float: right; background: none; width: 7.000rem; text-indent: 0; line-height: 3rem; padding: 0 3rem 0 0; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: #fff; }
+.agrupador-menu { display: inline-block; float: right; }
+.cabecera .boton_agrupador-menu:before { content: ''; border: 0.063rem solid #fff; width: 1.375rem; height: 1.375rem; line-height: 1.375rem; text-align: center; display: none; position: absolute; top: 0.750rem; left: auto; right: 0.750rem; text-align: center; }
+.agrupador__interior:after{content:'';display:table;clear:both;}
+.cabecera .boton_agrupador-menu:after { content: '\203A'; -ms-transform: rotate(90deg); width: 1.500rem; height: 1.500rem; display: none; position: absolute; top: 0.750rem; right: -0.063rem; -webkit-transform: rotate(90deg); transform: rotate(90deg); text-align: center; }
+.agrupador-compartir [class^="boton_"] { float: left; height: auto; width: 2.125rem; height: 2.125rem; border-radius: 1.063rem; background-size: 2rem auto; border-radius: 100%; margin: 0 0.188rem; }
+.agrupador-compartir [class^="boton_"]:before { font-size: inherit; line-height: 1; color: #fff; }
+.principal .visible .agrupador-menu__interior {  padding: 1.250rem 1.875rem; display: block; position: absolute; top: 3rem; right: 0; z-index: 5; }
+.principal .visible .agrupador-menu__interior:before { position: absolute; top: -0.500rem; right: 0; height: 0.5rem; width: 7.000rem; content: ''; display: block; }
+.principal .visible .agrupador-menu__interior ul { text-align: left; margin-bottom: 1.375rem; }
+.principal .visible .agrupador-menu__interior li { display: block; float: none; font-size: 0.750rem; line-height: 0.875rem; font-size: 0.750rem; line-height: 0.875rem; border-bottom: 0.063rem solid rgba(255,255,255,.2); text-transform: uppercase; }
+.principal .visible .agrupador-menu__interior li a { display: block; width:16.25rem; padding: 0.688rem 0 0.813rem; color: #fff; max-width: 21.750rem; width: 100%; }
+.principal .visible .agrupador-compartir { position: static; width: 7.500rem; margin: 0 auto; }
+/* simple */
+
+.agrupador--simple .visible .agrupador-menu__interior:before{display:none;}
+.principal .agrupador--simple .agrupador-compartir { float: right; display: block; padding: 0.875rem 0.625rem 0 0; }
+.agrupador--simple:after { display: table; clear: both; content: ''; }
+
+.cabecera-fecha-movil{display: none;color: #999;height: auto;text-transform: uppercase;background-color: #fff; text-align: left;padding: 0 10px;font-size: .6rem;}
+.cabecera-fecha-movil .cabecera-fecha{padding-left: 0;line-height: 110%; }
+.cabecera-fecha-movil .cabecera-fecha-actualizado span{padding: 0;}
+.cabecera-fecha-movil twc-header-global-weather{display: inline;text-align: right;line-height: 20px;float: right;}
+
+
+
+/* 1000PX */
+ @media(min-width:62.500em) {
+.agrupador-nombre a { height: 4rem; }
+.agrupador-patrocinador { height: 4rem; }
+.principal--fijo .cabecera-seccion--personalizada { }
+.principal--fijo .agrupador-patrocinador { display: none; }
+.principal--fijo .agrupador-nombre { width: auto; text-align: center; height: auto; }
+.principal--fijo .agrupador--simple .agrupador-compartir { display: none; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador-menu { padding: 0; border: 0; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador-compartir { top: 0.875rem; }
+.principal:not(.principal--fijo) .agrupador-menu { text-align: center; }
+}
+/* 999PX*/
+@media(max-width:62.438em) {
+.principal--fijo .agrupador-nombre { float: left; }
+.agrupador { display: block; clear: both; }
+.agrupador__interior { display: block; position: relative; }
+.agrupador__interior:after { clear: both; display: table; content: ''; }
+.principal--fijo .agrupador-menu__interior { display: none; }
+.principal--fijo .agrupador-patrocinador { position: absolute; top: 0; right: 50%; }
+.principal--fijo .boton_agrupador-menu, .principal--fijo .boton_agrupador-menu:before, .principal--fijo .boton_agrupador-menu:after { display: inline-block; }
+.principal .agrupador--simple .agrupador-compartir { padding-top: 0.375rem; }
+.principal:not(.principal--fijo) .agrupador-menu { text-align: left;}
+.principal:not(.principal--fijo) .agrupador-menu:not(.visible) .agrupador-menu-navegacion{padding-left: 0.625rem; margin-right: 8.625rem;overflow-x: scroll;white-space: nowrap;}
+.principal:not(.principal--fijo) .agrupador-menu:not(.visible) .agrupador-menu-navegacion::-webkit-scrollbar {display: none;}
+.principal:not(.principal--fijo) .agrupador-menu:not(.visible) .agrupador-menu-navegacion-listado{display: inline-block;overflow: hidden;vertical-align: top;}
+.elpais .navegacion_secciones--submenu a + button { width: 12px; right: 2px; padding-left: 0.268rem; }
+.elpais .navegacion_secciones--submenu button:after { right: 2px; }
+.elpais .navegacion_secciones--submenu button:before { width: 12px; right: 2px; padding-left: 0.268rem; }
+.elpais .navegacion_secciones--submenu a + button:after { right: auto; }
+.elpais .ediciones-navegacion-listado { max-width: 220px; margin-top: -9px; margin-left: 5px; }
+.elpais .ediciones-navegacion-listado li:nth-child(1):nth-last-child(5),
+.elpais .ediciones-navegacion-listado li:nth-child(1):nth-last-child(5) ~ li{width: 32%;}
+.elpais .ediciones-navegacion-listado li { display: inline-block; width: 49%; margin-bottom: 4px;}
+
+}
+
+/* 768PX */
+@media(min-width:48em) {
+.principal:not(.principal--fijo) .agrupador-menu { clear: both; display: block; float: none; font-weight: normal; background-color: #F5F5F5; font-size: 0.750rem; color: rgba(51,51,51,.8); text-transform: uppercase; border-top: 0.063rem solid #EBEBEB; margin-bottom: -0.063rem; min-height: 3rem; }
+.principal:not(.principal--fijo) .agrupador-menu li a { display: inline-block; font-size: 0.750rem; line-height: 3rem; padding: 0 0.250rem; font-weight: 500; }
+.principal:not(.principal--fijo) .agrupador-menu { position: relative; }
+.principal:not(.principal--fijo) .agrupador-menu .agrupador-compartir { position: absolute; top: 0.375rem; right: 0.625rem; z-index: 1; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador__interior { position: relative; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador-nombre { right: 50%; position: absolute; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador-menu { position: static; background: transparent; padding: 0; border: none; float: right; display: inline-block; clear: none; }
+.principal:not(.principal--fijo) .agrupador--simple .agrupador-menu .agrupador-compartir { position: static; }
+
+.principal--fijo .agrupador--simple .boton_agrupador-menu{display:none;}
+.principal--fijo .agrupador--simple .agrupador-menu__interior{display:block;}
+
+/*.principal:not(.principal--fijo) .agrupador-menu-navegacion{overflow-x: scroll;white-space: nowrap;margin-right:140;position:relative;}
+	.principal:not(.principal--fijo) .agrupador-menu-navegacion::-webkit-scrollbar {display: none;}*/
+}
+/* 767PX */
+ @media(max-width:47.938em) {
+	 .agrupador-menu__interior { display: none; }
+.agrupador { display: block; clear: both; }
+.agrupador__interior { display: block; position: relative; }
+.agrupador__interior:after { clear: both; display: table; content: ''; }
+.agrupador-patrocinador { position: absolute; top: 0; right: 50%; }
+.agrupador-nombre { float: left; }
+.cabecera .boton_agrupador-menu { display: block; }
+.cabecera .boton_agrupador-menu:before { display: block; }
+.cabecera .boton_agrupador-menu:after { display: block; text-align: center; }
+.agrupador-menu__interior{max-width:20rem;width:100%;}
+
+.agrupador--simple .boton_agrupador-menu {text-indent: -9999px; padding: 0; width: 3rem; text-align: left; font-weight: normal; font-size: 2rem; width: 2.125rem; height: 2.125rem; margin: 0.375rem 0.375rem 0 0;}
+.agrupador--simple .boton_agrupador-menu:after { display: none; }
+.agrupador--simple .boton_agrupador-menu:before { content: '\e90e'; text-indent: 0; top: 0; left: 0; font-size: inherit; line-height: 1; width: 2.125rem; height: 2.125rem; border-radius: 100%; color: #fff; }
+.principal .agrupador--simple .agrupador-compartir{width:auto;padding:0;}
+.agrupador--simple .visible.agrupador-menu{position:absolute;right:0.188rem;top:0.188rem;padding:0.125rem;border-radius:1.188rem;}
+.agrupador--simple .visible .boton_agrupador-menu{margin:0;}
+.principal .agrupador--simple .visible .agrupador-menu__interior{max-width:none;width:auto;padding:0;position:static;}
+.agrupador--simple .visible .agrupador-compartir{width:auto;padding:0;}
+.agrupador--simple .visible .agrupador-menu{padding:0;}
+.agrupador--simple .agrupador-compartir [class^="boton_"]{float:none;display:block;margin:0.188rem 0 0;}
+.salida_portada .principal:not(.principal--fijo) .elpais-navegacion { clear: both; margin-top: 0; }
+.elpais .ediciones { clear: both; padding-bottom: 1.188rem; }
+.elpais .navegacion_secciones--submenu a + button { right: .9rem; }
+.elpais .navegacion_secciones--submenu button:after { right: 1.1rem; top: 1.3rem; }
+.cabecera-fecha-movil{display: block;text-align: center;}
+.cabecera-fecha-movil .cabecera-fecha-actualizado span{display: inline;}
+}
+
+/* 599PX */
+ @media(max-width:37.438em) {
+.agrupador--patrocinador .agrupador__interior { margin-bottom: 2rem; }
+.agrupador--simple .agrupador__interior { margin-bottom: 0; }
+.agrupador .agrupador-patrocinador { margin-right: 0; top: 3rem; left: auto; right: 0; height: 2rem; position: absolute; }
+.principal--fijo .agrupador__interior { margin-bottom: 0; }
+.principal--fijo .agrupador-patrocinador { display: none; }
+.agrupador-nombre a { width: 11.250rem; }
+.boton_agrupador-menu .boton-nombre { display: none; }
+.principal .visible .agrupador-menu__interior:before { width: 3rem; }
+.boton_agrupador-menu { width: 3rem; }
+.cabecera .boton_usuario, .cabecera .boton_buscador,
+.principal--fijo .usuario .boton_usuario, .principal--fijo .buscador .boton_buscador{width:2.125rem;}
+.principal--fijo .contenedor_derecha{width:4.55rem;padding-right:.3rem;}
+
+}
+
+
+/* Portada */
+.salida_portada .principal:not(.principal--fijo) .seccion-migas{display:none;}
+.salida_portada .principal--fijo .seccion-migas{display:none;}
+@media(min-width:768px){
+.salida_portada .principal:not(.principal--fijo) .elpais{float:none;text-align:center; margin:1rem 0;}
+.salida_portada .principal:not(.principal--fijo) .elpais-logo {float: none;display: inline-block;margin-left: 0; z-index:300}
+.salida_portada .principal:not(.principal--fijo) .boton_elpais-menu{ margin:0 1rem; width:4rem; z-index:500}
+.salida_portada .principal:not(.principal--fijo) .elpais .boton_cerrar{ width:6rem; height:6.1rem; border-top:0.25rem solid #EDEDED;}
+.salida_portada .principal:not(.principal--fijo) .elpais .boton_cerrar span{ display:none;}
+.salida_portada .principal:not(.principal--fijo) .visible .elpais-menu__interior{ top:-1rem; padding:0;}
+.salida_portada .principal:not(.principal--fijo) .elpais-menu{text-align:left;}
+.salida_portada .principal:not(.principal--fijo) .elpais .ediciones { padding: 2.188rem 2% 1.488rem; }
+.salida_portada .principal:not(.principal--fijo) .altocontraste{top:0.9rem;}
+.salida_portada .principal:not(.principal--fijo) .tamanoletra{ top:0.9rem;}
+
+.salida_portada .principal:not(.principal--fijo) .elpais-logo a span { display: block; width: 12.85rem; height: 4.1rem; background: url(http://ep01.epimg.net/iconos/v1.x/v1.4/logos/cabecera_portada.svg) center no-repeat; background-size: auto 3.6rem; text-indent: -9999px; }
+:lang(en) .salida_portada .principal:not(.principal--fijo) .elpais-logo a span { background-image: url(http://ep01.epimg.net/iconos/v1.x/v1.4/logos/cabecera_portada_english.svg);}
+.salida_portada .principal:not(.principal--fijo) .elpais-logo .elpais-40aniversario span {  line-height: 3rem; width: 3rem; background: url(http://ep01.epimg.net/iconos/v2.x/v2.0/logos/40a-rojo.svg) 0 0.5rem no-repeat;  background-size: 2.5rem auto;}
+.salida_portada .principal:not(.principal--fijo) .elpais_40a .elpais-logo .elpais-40aniversario { right: -3rem; }
+.salida_portada .principal:not(.principal--fijo) .elpais_40a .elpais-logo .elpais-40aniversario span{position:relative;}
+.salida_portada .principal:not(.principal--fijo) .elpais_40a .elpais-logo .elpais-40aniversario span:before{background: rgba(175,175,175,.5);content:'';width:1px;height:34px;position:absolute;display:block;top:8px;left:-10px;}
+.salida_portada .principal:not(.principal--fijo) .elpais_40a .elpais-logo .elpais-40aniversario span:after{background:url(../../../iconos/v2.x/v2.1/40aniversario_flecha.png) center no-repeat;width:5px;height:8px;display:block;content:'';position:absolute;right:-2px;top:16px;}
+.alto_contraste.salida_portada .principal:not(.principal--fijo) .elpais-logo a span {background-image:url(http://ep01.epimg.net/iconos/v2.x/v2.1/cabecera_portada_blanco.svg);}
+}
+
+.alto_contraste .tamanoletra .activo{background:#333!important;}
+.alto_contraste .navegacion_suplementos a:after, .navegacion_otras a:after{background:#000;}
+.alto_contraste .principal--fijo .navegacion_suplementos a:after, .principal--fijo .navegacion_otras a:after{color: #fff;}
+.alto_contraste .principal--fijo .elpais .ediciones:before,
+.alto_contraste .principal--fijo .elpais-navegacion:before,
+.alto_contraste .principal--fijo .boton_altocontraste .control-punto,
+.alto_contraste .principal .boton_altocontraste .control-punto,
+.alto_contraste .elpais .ediciones .activo a:after{background-color: #fff!important;}
+
+/* 767PX */
+@media(max-width:47.938em) {
+
+  /* ajuste para que no se oculte el boton de cerrar del menú en móvil debajo de la publi de billboard */
+  .elpais { z-index: auto; }
+  .elpais-menu.visible { z-index: 1201; }
+
+  /* ajuste para que no se monte el alto contraste cuando está la barra fija con el menu de móvil desplegado */
+  .principal--fijo .elpais .ediciones { padding-top: 3.788rem; padding-bottom: 1rem; }
+}
+
+/* Suscríbete en cabecera fija */
+@media(min-width: 1000px){
+	.principal--fijo .contenedor_derecha .navegacion-sucripcion{display: block;}
+	.principal--fijo .contenedor_derecha .navegacion-sucripcion ul .newsletter{display: none;}
+	.principal--fijo .contenedor_derecha .navegacion-sucripcion{position: absolute;right: 100px;top: 6px;}
+	.principal--fijo .navegacion-sucripcion ul li.suscribete a{border-radius: 4px;padding-left: 1.375rem;padding-right: 1.375rem;font-weight: 900;font-size: 13px;white-space: nowrap;}
+}
+
+
+/* estilos para enlace de cadena ser en la cabecera */
+.cadena-ser {
+  display: none;
+}
+@media (min-width: 62.5rem){ /* 1000PX */
+  .principal--fijo .cadena-ser {
+    display: none;
+  }
+  .cadena-ser {
+    display: block;
+    float: left;
+    margin-top: 0.5rem;
+    border-left: 0.0625rem solid #D8D8D8;
+    border-right: 0.0625rem solid #D8D8D8;
+  }
+  .cadena-ser a {
+    display: block;
+    height: 1.25rem;
+    padding: 0 0.375rem;
+  }
+  .cadena-ser .texto-ser {
+    color: black;
+    font-size: 0.625rem;
+    line-height: 1.25rem;
+    font-family: 'Benton Sans';
+    font-weight: 500;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .cadena-ser .logo-ser {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.5rem;
+    height: 1.25rem;
+    text-align: left;
+    text-indent: -666rem;
+    overflow: hidden;
+    background: url('http://ep01.epimg.net/iconos/v2.x/v2.1/logos/ser.svg') no-repeat center;
+    background-size: contain;
+    margin-left: 0.25rem;
+  }
+
+  .alto_contraste .cadena-ser .logo-ser {
+  	background: url('http://ep01.epimg.net/iconos/v2.x/v2.1/logos/ser-blanco.svg') no-repeat center;
+  	background-size: contain;
+  }
+
+  .contenedor_derecha .navegacion-sucripcion ul .newsletter a {
+    margin-left: 0;
+  }
+}
+
+/* estilos para enlace de cadena ser dentro del menú desplegable */
+.cadena-ser-programa {
+  display: none;
+}
+@media (min-width: 62.5rem){
+  .salida_portada .principal:not(.principal--fijo) .boton_elpais-menu {
+    margin: 0;
+  }
+  .salida_portada .principal:not(.principal--fijo) .elpais .boton_cerrar{
+    width: 4rem;
+  }
+  .cadena-ser-programa {
+    display: block;
+    position: absolute;
+    top: -3.625rem;
+    right: 18.125rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-top: none;
+    border-bottom: none;
+    border-left: 0.0625rem solid #E6E6E6;
+    border-right: 0.0625rem solid #E6E6E6;
+    padding-top: 0.375rem;
+  }
+  #salida_articulo .cadena-ser-programa,
+  #salida_portadilla .cadena-ser-programa {
+    top: -3.5rem;
+    padding-bottom: 0.8rem;
+    padding-top: 1rem;
+  }
+  #salida_portada .principal--fijo .cadena-ser-programa {
+    top: -3.375rem;
+    padding-bottom: 0.8rem;
+    padding-top: 0.9rem;
+  }
+  #salida_articulo .principal--fijo .cadena-ser-programa,
+  #salida_portadilla .principal--fijo .cadena-ser-programa {
+    top: -3.3rem;
+    padding-bottom: 0.7rem;
+    padding-top: 0.9rem;
+  }
+  .principal--fijo .cadena-ser-programa {
+    border-left: 0.0625rem solid #1B7BAB;
+    border-right: 0.0625rem solid #1B7BAB;
+  }
+  .cadena-ser-programa a {
+    max-width: 12rem;
+    display: block;
+    text-align: right;
+    position: relative;
+    padding-right: 2.25rem;
+  }
+  .cadena-ser-programa a:after {
+    content: '';
+    border-top: 0.0625rem solid black;
+    border-right: 0.0625rem solid black;
+    display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: rotate(45deg) translateY(-50%);
+  }
+  .principal--fijo .cadena-ser-programa a:after {
+    border-color: white;
+  }
+  .cadena-ser-programa a:before {
+    content: '';
+    display: block;
+    width: 0.0625rem;
+    height:100%;
+    position: absolute;
+    top: 0;
+    right: 1.625rem;
+    background: #D3D3D3;
+  }
+  .cadena-ser-programa .texto-programa {
+    color: black;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    font-family: 'Benton Sans';
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 6.785rem;
+  }
+  .cadena-ser-programa .texto-ser {
+    color: black;
+    font-size: 0.625rem;
+    line-height: 0.875rem;
+    font-family: 'Benton Sans';
+    font-weight: 100;
+    text-transform: uppercase;
+    display: block;
+  }
+  .principal--fijo .cadena-ser-programa .texto-programa,
+  .principal--fijo .cadena-ser-programa .texto-ser {
+    color: white;
+  }
+  .cadena-ser-programa .logo-ser {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.5rem;
+    height: 0.875rem;
+    text-align: left;
+    text-indent: -666rem;
+    overflow: hidden;
+    background: url('http://ep01.epimg.net/iconos/v2.x/v2.1/logos/ser.svg') no-repeat center;
+    background-size: contain;
+    margin-left: 0.25rem;
+  }
+
+
+  .principal--fijo .cadena-ser-programa .logo-ser {
+    background-image: url('http://ep01.epimg.net/iconos/v2.x/v2.1/logos/ser-blanco.svg');
+  }
+}
+
+
+.btn {
+ display: block;
+ margin-top: 15px;
+ margin-bottom: 15px;
+ padding: 12px;
+ color: rgba(255, 255, 255, 1);
+ font-size: 21px;
+ line-height: 21px;
+ text-align: center;
+ text-decoration: none;
+ border-radius: 8px;
+ text-transform: uppercase;
+ font-family: MarcinAntB,sans-serif;
+}
+
+.btn--orange {
+ background-color: #f7cf3c;
+ color: #000;
+ font-weight: 700;
+ border-right: 0.063rem solid rgba(228,228,228,.7);
+}
+
+.btn--animate-grow {
+ transition-duration: 0.3s;
+ transition-property: transform;
+}
+
+.btn--animate-grow:hover {
+ transform: scale(1.1);
+ cursor: pointer;
+}
+
+

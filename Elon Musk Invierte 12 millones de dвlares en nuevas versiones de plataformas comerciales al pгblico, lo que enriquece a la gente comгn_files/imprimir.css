@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'ElPais';
+    src: url('http://ep01.epimg.net/fonts/v1.x/v1.0/logos/elpais.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.envoltorio_publi, .cabecera-superior, .compartir, .articulo-comentarios, .articulo-apoyos, .boton_video, .autor-perfiles, .promo, .lateral, .elpais-menu, div[class^="app_gdpr--"] {
+    display: none;
+}
+
+.elpais {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    clear: none !important;
+}
+
+.elpais-logo {
+    margin-left: 8px;
+    padding: 15px 8px 15px 0;
+}
+
+.elpais-logo a span {
+    text-indent: -9999px;
+    background: none;
+    font-size: 32px;
+    line-height: 34px;
+    text-transform: uppercase;
+    height: auto;
+    font-family: 'Majerit';
+    width: 120px;
+    height: 34px;
+    position: relative;
+}
+
+.elpais-logo a span:before {
+    content: '\e900';
+    font-family: 'ElPais';
+    display: block;
+    width: 120px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 26px;
+    text-indent: 0;
+    color: #111;
+}
+
+.principal--fijo .cabecera {
+    position: static;
+}
+
+.principal--fijo .seccion-migas a {
+    color: #f7cf3c;
+}
+
+.elpais-logo {
+    float: left !important;
+    display: inline-block !important;
+    margin-left: 0 !important;
+}
+
+.cabecera-seccion {
+    float: right !important;
+    clear: none !important;
+    background: none !important;
+    border-none !important;
+    display: inline-block !important;
+}
+
+.seccion-migas {
+    float: right !important;
+    clear: none;
+    text-align: right !important;
+    width: auto !important;
+    font-size: 32px !important;
+    line-height: 34px !important;
+    padding: 15px 0 15px 0 !important;
+}
+
+.cabecera {
+    border-bottom: 1px solid #D0D0D0;
+    box-shadow: none !important;
+}
+
+.seccion-submenu {
+    display: none !important;
+}
